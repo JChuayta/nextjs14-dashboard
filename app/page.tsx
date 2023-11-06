@@ -1,7 +1,7 @@
 import { lusitana } from "@/app/ui/fonts";
 import Image from "next/image";
 import Link from "next/link";
-import "./ui/global.css";
+// import "./ui/global.css";
 
 export default function Page() {
   return (
