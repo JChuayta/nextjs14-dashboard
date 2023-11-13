@@ -1,9 +1,11 @@
 import { lusitana } from "@/app/ui/fonts";
 import Image from "next/image";
 import Link from "next/link";
+import { fetchRevenue } from "./lib/data";
 // import "./ui/global.css";
 
-export default function Page() {
+export default async function Page() {
+  const revenue = await fetchRevenue();
   return (
     <main className="flex min-h-screen flex-col p-6">
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
